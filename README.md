@@ -31,6 +31,19 @@ called consul.
 	to appropriate service instnace.
 
 
+# Usage
+	There are several steps to using this workshop:
+		Running up load balancer(from the root of the project):
+			1) enter loadBalancer project - cd loadBalancer
+			2) install all dependencies for loadBalander - npm i
+			3) start a load balancer - node src/server.js 
+		If no services are registered in the consul service discovery bad gateway should get returned upon requests to loadBalancer.
+		Running instances of web application ( service that gets registered in the service discovery )
+			(from the project root)
+			1) enter webApplication project folder - cd webApplication
+			2) install all dependencies - npm i
+			3) run as many instances of web app as you want in different sessions of terminal - node src/server.js users-service or node src/server.js admin-service.
+			Each of these invocations should start a new instance of a service with tag specified as an argument ( either users-service or admin-service).
 # Useful links
 https://microservices.io/patterns/server-side-discovery.html 
 	
