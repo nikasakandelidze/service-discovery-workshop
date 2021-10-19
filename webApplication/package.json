@@ -1,0 +1,25 @@
+{
+  "name": "service-discovery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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:x-oauth-basic@github.com/nikasakandelidze/service-discovery-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikasakandelidze/service-discovery-workshop/issues"
+  },
+  "homepage": "https://github.com/nikasakandelidze/service-discovery-workshop#readme",
+  "dependencies": {
+    "consul": "^0.40.0",
+    "nanoid": "^3.1.30",
+    "nodemon": "^2.0.14",
+    "portfinder": "^1.0.28"
+  }
+}
