@@ -2,7 +2,7 @@
 This project demonstrated service discovry mechanism using service disc. software
 called consul.
 
-Problem:
+## Problem:
 	Monolithic services typically have several modules that communicate with each other
 	using some application level mechanisms like: method invocations, procedure calls etc.
 	In distributed, microservices, systems parts of services are distributed accross the network let's say we have 
@@ -21,7 +21,7 @@ Problem:
 	and the main reason for this is  a dependency of network topology on some outer factors(like system load...etc.)
 	
 	How can client of our services discover locations of different instances of dynamic services?
-Solution:
+## Solution:
 	Service discovery pattern. Cerntralized storage, catalogue, dictionary of services.
 	Each new instance programtaically registers itself and it's ip address in service discovery upon coming to life.
 	Upon death/shut down of an instance of a service, instance deregisters itself from service discovery catalogue.
